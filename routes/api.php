@@ -3,11 +3,12 @@
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\JsonResponse;
+use App\Http\Controllers\DeviceController;
 
 /*
  Endpoint para validar el estado del servicio y la conexión a BD.
 */
-
+Route::apiResource('devices', DeviceController::class);
 Route::get('/system/healthcheck', function (): JsonResponse {
     try {
         // Intentamos una consulta simple para verificar la conexión
