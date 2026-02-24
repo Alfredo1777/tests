@@ -1,0 +1,170 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "SIGMA GPS API",
+        "description": "API REST SQL-First para gestión de dispositivos GPS, telemetría de alta frecuencia y análisis geoespacial con TimescaleDB.",
+        "contact": {
+            "email": "soporte@sigma-gps.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://my-default-host.com",
+            "description": "API Server"
+        }
+    ],
+    "paths": {
+        "/api/v1/gps/devices": {
+            "get": {
+                "tags": [
+                    "Devices"
+                ],
+                "summary": "Listar dispositivos",
+                "description": "Retorna lista paginada de dispositivos con filtros (Spatie Query Builder)",
+                "operationId": "getDevicesList",
+                "parameters": [
+                    {
+                        "name": "filter[brand]",
+                        "in": "query",
+                        "description": "Filtrar por marca",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "filter[imei]",
+                        "in": "query",
+                        "description": "Filtrar por IMEI",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Operación exitosa"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Devices"
+                ],
+                "summary": "Registrar dispositivo",
+                "description": "Crea un nuevo dispositivo en el inventario",
+                "operationId": "storeDevice",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreDeviceRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Dispositivo creado"
+                    },
+                    "422": {
+                        "description": "Error de validación (IMEI duplicado, etc)"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "StoreDeviceRequest": {
+                "required": [
+                    "imei",
+                    "brand",
+                    "model",
+                    "status_id"
+                ],
+                "properties": {
+                    "imei": {
+                        "description": "Identificador único de 15 dígitos",
+                        "type": "string",
+                        "example": "123456789012345"
+                    },
+                    "brand": {
+                        "type": "string",
+                        "example": "Teltonika"
+                    },
+                    "model": {
+                        "type": "string",
+                        "example": "FMB920"
+                    },
+                    "status_id": {
+                        "description": "ID del estado inicial (core.status)",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "frequency": {
+                        "description": "Reporte en segundos (min 10)",
+                        "type": "integer",
+                        "example": 30
+                    },
+                    "metadata": {
+                        "type": "object",
+                        "example": {
+                            "installation_date": "2024-01-01"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "StoreTelemetryRequest": {
+                "required": [
+                    "satellite",
+                    "latitude",
+                    "longitude"
+                ],
+                "properties": {
+                    "latitude": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 19.2433
+                    },
+                    "longitude": {
+                        "type": "number",
+                        "format": "float",
+                        "example": -103.7244
+                    },
+                    "speed": {
+                        "type": "number",
+                        "format": "float",
+                        "example": 60.5
+                    },
+                    "course": {
+                        "type": "integer",
+                        "example": 180
+                    },
+                    "battery": {
+                        "type": "integer",
+                        "example": 98
+                    },
+                    "ignition": {
+                        "type": "boolean",
+                        "example": true
+                    },
+                    "satellite": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2024-03-20T10:00:00Z"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Devices",
+            "description": "Gestión del ciclo de vida de los dispositivos (CRUD)"
+        }
+    ]
+}

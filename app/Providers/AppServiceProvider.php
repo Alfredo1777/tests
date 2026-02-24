@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Modules\GPS\Models\Device;
+use App\Modules\GPS\Observers\DeviceObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,6 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
+        if (class_exists(\L5Swagger\L5SwaggerServiceProvider::class)) {
+        $this->app->register(\L5Swagger\L5SwaggerServiceProvider::class);
+        }
         //
     }
 
@@ -19,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        //Registrar el observer para el modelo Device
+        Device::observe(DeviceObserver::class);
     }
 }

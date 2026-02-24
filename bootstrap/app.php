@@ -14,7 +14,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        //Registrar el alias
+        $middleware->alias([
+            'resolve.device.uuid' => ResolveDeviceUuid::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
