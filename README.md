@@ -60,3 +60,15 @@ GET [http://127.0.0.1:8000/api/system/healthcheck](http://127.0.0.1:8000/api/sys
 app/ Core del Framework
 Modules/ Logica de negocio (features)
 boostrap/ Configuracion de arranque (Api mode)
+
+#DOCKER Y LA CREACION DE USUARIOS
+
+Generar Credenciales:
+
+-User: Obtener UUID del dispositivo (ej. impreso en la etiqueta o generado por software).
+-Pass: Generar cadena aleatoria de 12 caracteres (A-Z, a-z, 0-9, símbolos).
+
+Registrar en el Broker:
+Ejecutar el siguiente comando (sin reiniciar el servicio):
+"docker compose exec mqtt mosquitto_passwd -b /mosquitto/config/passwd <UUID_DEL_DEVICE> <PASSWORD_GENERADO>"
+Reiniciar docker.
