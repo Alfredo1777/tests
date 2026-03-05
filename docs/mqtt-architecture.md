@@ -2,8 +2,6 @@
 
 Este documento describe la topología y el flujo de datos del sistema de telemetría vehicular.
 
-
-
 ## 1. Componentes Principales
 * **Dispositivos GPS (Productores):** Clientes remotos que publican datos de ubicación y estado.
 * **Broker MQTT (Eclipse Mosquitto):** El núcleo del sistema. Se encarga de recibir, filtrar y enrutar los mensajes basándose en reglas de seguridad (ACL).

@@ -126,6 +126,13 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+        'mqtt' => [
+            'driver' => 'daily', // Habilita la rotación automática por día
+            'path' => storage_path('logs/mqtt.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14, // Mantiene los logs por 14 días y borra los viejos
+            'formatter' => Monolog\Formatter\JsonFormatter::class, // Formato Estructurado
+        ],
 
     ],
 

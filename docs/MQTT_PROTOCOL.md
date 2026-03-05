@@ -110,8 +110,31 @@ Uso: Solo para Debugging manual.
 Peligro: Si usas esto en producción, tu servidor recibirá toneladas de basura que no necesita procesar, saturando la memoria.
 
 ## Matriz de Permisos y Control de Acceso (ACL)
-Esta tabla define los privilegios estrictos configurados en el broker Mosquitto (acl.conf). El sistema utiliza el principio de mínimo privilegio.
-Rol / Usuario,Descripción,Nivel de Acceso
-Super Admin (admin),Administrador del sistema y desarrolladores.,TOTAL (Read/Write #)Acceso irrestricto a todos los topics para depuración y mantenimiento.
-Backend (laravel_backend),La aplicación Laravel (Worker).,ESPECÍFICO- Lee toda la telemetría.- Envía comandos a cualquier dispositivo.
-Dispositivos GPS (Patrón %u),"Los dispositivos físicos (LilyGo, Teltonika, etc.).",RESTRICTIVO (Silo)- Solo puede escribir en SU propio topic.- Solo puede leer SUS propios comandos.- No puede ver ni afectar a otros dispositivos.
+Esta seccion define los privilegios estrictos configurados en el broker Mosquitto (acl.conf). El sistema utiliza el principio de mínimo privilegio.
+1. Rol: Super Admin
+Usuario: admin
+
+Descripción: Administrador del sistema y desarrolladores.
+Nivel de Acceso: TOTAL (Read/Write #)
+Tiene acceso irrestricto a todos los topics para depuración y mantenimiento.
+
+2. Rol: Backend (Laravel)
+Usuario: laravel_backend
+
+Descripción: La aplicación Laravel (Worker) que procesa los datos.
+Nivel de Acceso: ESPECÍFICO
+Lectura: Lee toda la telemetría de la flota (gps/devices/+/telemetry), estados de conexión y respuestas de comandos.
+Escritura: Puede enviar comandos a cualquier dispositivo (gps/commands/#).
+Restricción: No puede suplantar la identidad de un GPS (no puede escribir telemetría falsa).
+
+3. Rol: Dispositivo GPS
+Usuario: %u (El UUID del dispositivo)
+
+Descripción: Los dispositivos físicos (LilyGo, Teltonika, etc.).
+Nivel de Acceso: RESTRICTIVO (Silo)
+Escritura: Solo puede publicar en SU propio topic de telemetría (gps/devices/%u/telemetry), status y respuesta.
+Lectura: Solo puede escuchar SUS propios comandos (gps/commands/%u/+).
+Restricción: No puede ver ni afectar a ningún otro dispositivo de la flota. Aislamiento total.
+
+## LIMITES ENCONTRADOS EN LA FASE DE TESTING
+Se realizaron pruebas de estrés con un script maestro inyectando mensajes concurrentes. Con 10 dispositivos, la latencia de inyección fue de 0.0008 segundos. Al escalar a 100 dispositivos, el sistema mantuvo la estabilidad alcanzando un throughput de 24673.83 mensajes/segundo sin bloqueos en el broker, validando la eficiencia del protocolo MQTT frente a HTTP para telemetría de alta frecuencia
