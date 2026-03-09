@@ -1,0 +1,46 @@
+services:
+  mqtt:
+    image: eclipse-mosquitto:2
+    container_name: sigma_mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883" # Puerto MQTT (Para tus GPS y Laravel)
+      - "9001:9001" # Puerto WebSockets (Para futuro Dashboard)
+    volumes:
+      # Mapeamos las carpetas de tu proyecto a las del contenedor
+      - ./docker/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./docker/mosquitto/data:/mosquitto/data
+      - ./docker/mosquitto/log:/mosquitto/log
+      - ./docker/mosquitto/config/passwd:/mosquitto/config/passwd
+      - ./docker/mosquitto/config/acl.conf:/mosquitto/config/acl.conf
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'    # Limita uso de CPU
+          memory: 256M    # Limita uso de RAM
+    networks:
+      - sigma_net
+
+  mqtt-worker:
+    # 1. Usa LA MISMA imagen que tu servicio principal de Laravel
+    image: eclipse-mosquitto:2 
+    container_name: sigma_mqtt_worker
+    
+    # 2. ESTO ES SUPERVISOR EN DOCKER: Si el comando muere, Docker lo revive automáticamente
+    restart: unless-stopped 
+    
+    # 3. Mapea tu código fuente (Ajusta la ruta '/var/www/html' si en tu app es distinta, como '/opt/bitnami/laravel')
+    volumes:
+      - ./:/var/www/html
+      
+    # 4. El comando que queremos mantener vivo
+    command: php artisan mqtt:subscribe
+    
+    # 5. Depende de Mosquitto
+    depends_on:
+      - mqtt
+
+# Definimos una red interna para que sea ordenado
+networks:
+  sigma_net:
+    driver: bridge
