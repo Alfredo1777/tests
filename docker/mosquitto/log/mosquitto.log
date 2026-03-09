@@ -1,0 +1,1221 @@
+1772047840: mosquitto version 2.1.2 starting
+1772047840: Config loaded from /mosquitto/config/mosquitto.conf.
+1772047840: Bridge support available.
+1772047840: Persistence support available.
+1772047840: TLS support available.
+1772047840: TLS-PSK support available.
+1772047840: Websockets support available.
+1772047840: Opening ipv4 listen socket on port 1883.
+1772047840: Opening ipv6 listen socket on port 1883.
+1772047840: Opening ipv4 listen socket on port 9001.
+1772047840: Opening ipv6 listen socket on port 9001.
+1772047840: mosquitto version 2.1.2 running
+1772048432: mosquitto version 2.1.2 terminating
+1772048432: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772048433: mosquitto version 2.1.2 starting
+1772048433: Config loaded from /mosquitto/config/mosquitto.conf.
+1772048433: Bridge support available.
+1772048433: Persistence support available.
+1772048433: TLS support available.
+1772048433: TLS-PSK support available.
+1772048433: Websockets support available.
+1772048433: Opening ipv4 listen socket on port 1883.
+1772048433: Opening ipv6 listen socket on port 1883.
+1772048433: Opening ipv4 listen socket on port 9001.
+1772048433: Opening ipv6 listen socket on port 9001.
+1772048433: mosquitto version 2.1.2 running
+1772048762: mosquitto version 2.1.2 terminating
+1772048762: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772048763: mosquitto version 2.1.2 starting
+1772048763: Config loaded from /mosquitto/config/mosquitto.conf.
+1772048763: Bridge support available.
+1772048763: Persistence support available.
+1772048763: TLS support available.
+1772048763: TLS-PSK support available.
+1772048763: Websockets support available.
+1772048763: Opening ipv4 listen socket on port 1883.
+1772048763: Opening ipv6 listen socket on port 1883.
+1772048763: Opening ipv4 listen socket on port 9001.
+1772048763: Opening ipv6 listen socket on port 9001.
+1772048763: mosquitto version 2.1.2 running
+1772048937: mosquitto version 2.1.2 terminating
+1772048937: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772048937: mosquitto version 2.1.2 starting
+1772048937: Config loaded from /mosquitto/config/mosquitto.conf.
+1772048937: Bridge support available.
+1772048937: Persistence support available.
+1772048937: TLS support available.
+1772048937: TLS-PSK support available.
+1772048937: Websockets support available.
+1772048937: Opening ipv4 listen socket on port 1883.
+1772048937: Opening ipv6 listen socket on port 1883.
+1772048937: Opening ipv4 listen socket on port 9001.
+1772048937: Opening ipv6 listen socket on port 9001.
+1772048937: mosquitto version 2.1.2 running
+1772049077: mosquitto version 2.1.2 terminating
+1772049077: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772049077: mosquitto version 2.1.2 starting
+1772049077: Config loaded from /mosquitto/config/mosquitto.conf.
+1772049077: Bridge support available.
+1772049077: Persistence support available.
+1772049077: TLS support available.
+1772049077: TLS-PSK support available.
+1772049077: Websockets support available.
+1772049077: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772049077: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772049077: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772049077: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772049077: Opening ipv4 listen socket on port 1883.
+1772049077: Opening ipv6 listen socket on port 1883.
+1772049077: Opening ipv4 listen socket on port 9001.
+1772049077: Opening ipv6 listen socket on port 9001.
+1772049077: mosquitto version 2.1.2 running
+1772049470: New connection from ::1:54310 on port 1883.
+1772049470: Client auto-5888A086-F191-1254-DD17-B14BD41913C1 [::1:54310] disconnected: not authorised.
+1772049482: New connection from ::1:35510 on port 1883.
+1772049482: New client connected from ::1:35510 as auto-907E2DFB-7DE0-2EF0-AC5F-90A49C7BFD4E (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772049482: Client auto-907E2DFB-7DE0-2EF0-AC5F-90A49C7BFD4E [::1:35510] disconnected.
+1772050877: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772052174: New connection from ::1:35216 on port 1883.
+1772052174: New client connected from ::1:35216 as auto-95ECF762-5A2A-71AC-CFE1-E4027E435318 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772052206: New connection from ::1:56336 on port 1883.
+1772052206: New client connected from ::1:56336 as auto-50B5C2A5-3989-4C12-88D9-334778DDBD90 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772052206: Client auto-50B5C2A5-3989-4C12-88D9-334778DDBD90 [::1:56336] disconnected.
+1772052678: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772054192: Client auto-95ECF762-5A2A-71AC-CFE1-E4027E435318 [::1:35216] disconnected.
+1772054289: mosquitto version 2.1.2 terminating
+1772054289: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772054290: mosquitto version 2.1.2 starting
+1772054290: Config loaded from /mosquitto/config/mosquitto.conf.
+1772054290: Bridge support available.
+1772054290: Persistence support available.
+1772054290: TLS support available.
+1772054290: TLS-PSK support available.
+1772054290: Websockets support available.
+1772054290: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772054290: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772054290: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772054290: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772054290: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772054290: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772054290: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772054290: Plugin builtin-security has registered to receive 'acl-check' events.
+1772054290: Opening ipv4 listen socket on port 1883.
+1772054290: Opening ipv6 listen socket on port 1883.
+1772054290: Opening ipv4 listen socket on port 9001.
+1772054290: Opening ipv6 listen socket on port 9001.
+1772054290: mosquitto version 2.1.2 running
+1772054307: New connection from ::1:37124 on port 1883.
+1772054307: New client connected from ::1:37124 as auto-26941032-E783-DD24-4C6A-3D646E1788A2 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772054307: Client auto-26941032-E783-DD24-4C6A-3D646E1788A2 [::1:37124] disconnected.
+1772054319: New connection from ::1:37260 on port 1883.
+1772054319: New client connected from ::1:37260 as auto-99F12A88-5A14-9625-BF86-9F246F554A74 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772054319: Client auto-99F12A88-5A14-9625-BF86-9F246F554A74 [::1:37260] disconnected.
+1772054580: mosquitto version 2.1.2 terminating
+1772054580: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772054580: mosquitto version 2.1.2 starting
+1772054580: Config loaded from /mosquitto/config/mosquitto.conf.
+1772054580: Bridge support available.
+1772054580: Persistence support available.
+1772054580: TLS support available.
+1772054580: TLS-PSK support available.
+1772054580: Websockets support available.
+1772054580: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772054580: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772054580: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772054580: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772054580: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772054580: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772054580: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772054580: Plugin builtin-security has registered to receive 'acl-check' events.
+1772054580: Opening ipv4 listen socket on port 1883.
+1772054580: Opening ipv6 listen socket on port 1883.
+1772054580: Opening ipv4 listen socket on port 9001.
+1772054580: Opening ipv6 listen socket on port 9001.
+1772054580: mosquitto version 2.1.2 running
+1772054588: New connection from ::1:39326 on port 1883.
+1772054588: New client connected from ::1:39326 as auto-103D9E97-72D6-170D-FCFE-5076E66FDA69 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772054588: Client auto-103D9E97-72D6-170D-FCFE-5076E66FDA69 [::1:39326] disconnected.
+1772054782: New connection from ::1:44356 on port 1883.
+1772054782: New client connected from ::1:44356 as auto-B14AFC00-2666-F1FB-1D8C-26E937D1C608 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772054782: Client auto-B14AFC00-2666-F1FB-1D8C-26E937D1C608 [::1:44356] disconnected.
+1772054842: New connection from ::1:40376 on port 1883.
+1772054842: New client connected from ::1:40376 as auto-9B3470A0-DBFE-A084-8E11-DDDE9A346564 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772054842: Client auto-9B3470A0-DBFE-A084-8E11-DDDE9A346564 [::1:40376] disconnected.
+1772056332: New connection from ::1:42738 on port 1883.
+1772056332: New client connected from ::1:42738 as auto-B004680C-42D5-20FF-23FC-224DCBDFAD9D (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772056332: Client auto-B004680C-42D5-20FF-23FC-224DCBDFAD9D [::1:42738] disconnected.
+1772056381: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772056580: New connection from ::1:42598 on port 1883.
+1772056580: New client connected from ::1:42598 as auto-089C6B58-7C0F-9F36-5089-04D85F27AD4D (p4, c1, k60, u'admin').
+1772056626: New connection from ::1:47266 on port 1883.
+1772056626: New client connected from ::1:47266 as auto-ECF0F82E-17B0-063F-847E-3D0B974BC4C3 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772056626: Client auto-ECF0F82E-17B0-063F-847E-3D0B974BC4C3 [::1:47266] disconnected.
+1772056724: New connection from ::1:44270 on port 1883.
+1772056724: New client connected from ::1:44270 as auto-98463418-D129-945E-98DE-8D49DAFD718C (p4, c1, k60, u'laravel_backend').
+1772056766: New connection from ::1:57094 on port 1883.
+1772056766: New client connected from ::1:57094 as auto-B5461E28-980C-60FD-9828-465DBEF38F3C (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772056766: Client auto-B5461E28-980C-60FD-9828-465DBEF38F3C [::1:57094] disconnected.
+1772057007: New connection from ::1:55426 on port 1883.
+1772057007: New client connected from ::1:55426 as auto-982DEC26-9CE2-5B58-3083-E79BAB4115D0 (p4, c1, k60, u'550e8400-e29b-41d4-a716-446655440000').
+1772057007: Client auto-982DEC26-9CE2-5B58-3083-E79BAB4115D0 [::1:55426] disconnected.
+1772119737: mosquitto version 2.1.2 starting
+1772119737: Config loaded from /mosquitto/config/mosquitto.conf.
+1772119737: Bridge support available.
+1772119737: Persistence support available.
+1772119737: TLS support available.
+1772119737: TLS-PSK support available.
+1772119737: Websockets support available.
+1772119737: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772119737: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772119737: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772119737: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772119737: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772119737: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772119737: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772119737: Plugin builtin-security has registered to receive 'acl-check' events.
+1772119737: Opening ipv4 listen socket on port 1883.
+1772119737: Opening ipv6 listen socket on port 1883.
+1772119737: Opening ipv4 listen socket on port 9001.
+1772119737: Opening ipv6 listen socket on port 9001.
+1772119737: mosquitto version 2.1.2 running
+1772120856: mosquitto version 2.1.2 terminating
+1772120856: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772120857: mosquitto version 2.1.2 starting
+1772120857: Config loaded from /mosquitto/config/mosquitto.conf.
+1772120857: Bridge support available.
+1772120857: Persistence support available.
+1772120857: TLS support available.
+1772120857: TLS-PSK support available.
+1772120857: Websockets support available.
+1772120857: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772120857: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772120857: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772120857: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772120857: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772120857: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772120857: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772120857: Plugin builtin-security has registered to receive 'acl-check' events.
+1772120857: Opening ipv4 listen socket on port 1883.
+1772120857: Opening ipv6 listen socket on port 1883.
+1772120857: Opening ipv4 listen socket on port 9001.
+1772120857: Opening ipv6 listen socket on port 9001.
+1772120857: mosquitto version 2.1.2 running
+1772120950: mosquitto version 2.1.2 terminating
+1772120950: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772121002: mosquitto version 2.1.2 starting
+1772121002: Config loaded from /mosquitto/config/mosquitto.conf.
+1772121002: Bridge support available.
+1772121002: Persistence support available.
+1772121002: TLS support available.
+1772121002: TLS-PSK support available.
+1772121002: Websockets support available.
+1772121002: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772121002: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772121002: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772121002: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772121002: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772121002: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772121002: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772121002: Plugin builtin-security has registered to receive 'acl-check' events.
+1772121002: Opening ipv4 listen socket on port 1883.
+1772121002: Opening ipv6 listen socket on port 1883.
+1772121002: Opening ipv4 listen socket on port 9001.
+1772121002: Opening ipv6 listen socket on port 9001.
+1772121002: mosquitto version 2.1.2 running
+1772121051: mosquitto version 2.1.2 terminating
+1772121051: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772121061: mosquitto version 2.1.2 starting
+1772121061: Config loaded from /mosquitto/config/mosquitto.conf.
+1772121061: Bridge support available.
+1772121061: Persistence support available.
+1772121061: TLS support available.
+1772121061: TLS-PSK support available.
+1772121061: Websockets support available.
+1772121061: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772121061: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772121061: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772121061: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772121061: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772121061: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772121061: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772121061: Plugin builtin-security has registered to receive 'acl-check' events.
+1772121061: Opening ipv4 listen socket on port 1883.
+1772121061: Opening ipv6 listen socket on port 1883.
+1772121061: Opening ipv4 listen socket on port 9001.
+1772121061: Opening ipv6 listen socket on port 9001.
+1772121061: mosquitto version 2.1.2 running
+1772121666: mosquitto version 2.1.2 terminating
+1772121666: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772121667: mosquitto version 2.1.2 starting
+1772121667: Config loaded from /mosquitto/config/mosquitto.conf.
+1772121667: Bridge support available.
+1772121667: Persistence support available.
+1772121667: TLS support available.
+1772121667: TLS-PSK support available.
+1772121667: Websockets support available.
+1772121667: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772121667: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772121667: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772121667: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772121667: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772121667: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772121667: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772121667: Plugin builtin-security has registered to receive 'acl-check' events.
+1772121667: Opening ipv4 listen socket on port 1883.
+1772121667: Opening ipv6 listen socket on port 1883.
+1772121667: Opening ipv4 listen socket on port 9001.
+1772121667: Opening ipv6 listen socket on port 9001.
+1772121667: mosquitto version 2.1.2 running
+1772121714: mosquitto version 2.1.2 terminating
+1772121714: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772121715: mosquitto version 2.1.2 starting
+1772121715: Config loaded from /mosquitto/config/mosquitto.conf.
+1772121715: Bridge support available.
+1772121715: Persistence support available.
+1772121715: TLS support available.
+1772121715: TLS-PSK support available.
+1772121715: Websockets support available.
+1772121715: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772121715: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772121715: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772121715: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772121715: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772121715: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772121715: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772121715: Plugin builtin-security has registered to receive 'acl-check' events.
+1772121715: Opening ipv4 listen socket on port 1883.
+1772121715: Opening ipv6 listen socket on port 1883.
+1772121715: Opening ipv4 listen socket on port 9001.
+1772121715: Opening ipv6 listen socket on port 9001.
+1772121715: mosquitto version 2.1.2 running
+1772121896: mosquitto version 2.1.2 terminating
+1772121896: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772121897: mosquitto version 2.1.2 starting
+1772121897: Config loaded from /mosquitto/config/mosquitto.conf.
+1772121897: Bridge support available.
+1772121897: Persistence support available.
+1772121897: TLS support available.
+1772121897: TLS-PSK support available.
+1772121897: Websockets support available.
+1772121897: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772121897: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772121897: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772121897: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772121897: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772121897: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772121897: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772121897: Plugin builtin-security has registered to receive 'acl-check' events.
+1772121897: Opening ipv4 listen socket on port 1883.
+1772121897: Opening ipv6 listen socket on port 1883.
+1772121897: Opening ipv4 listen socket on port 9001.
+1772121897: Opening ipv6 listen socket on port 9001.
+1772121897: mosquitto version 2.1.2 running
+1772122183: New connection from ::1:50596 on port 1883.
+1772122183: New client connected from ::1:50596 as auto-A60A0805-3510-2D0C-0705-B38933150BB1 (p4, c1, k60, u'admin').
+1772122449: Client auto-A60A0805-3510-2D0C-0705-B38933150BB1 [::1:50596] disconnected.
+1772122459: mosquitto version 2.1.2 terminating
+1772122459: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772122460: mosquitto version 2.1.2 starting
+1772122460: Config loaded from /mosquitto/config/mosquitto.conf.
+1772122460: Bridge support available.
+1772122460: Persistence support available.
+1772122460: TLS support available.
+1772122460: TLS-PSK support available.
+1772122460: Websockets support available.
+1772122460: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772122460: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772122460: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772122460: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772122460: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772122460: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772122460: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772122460: Plugin builtin-security has registered to receive 'acl-check' events.
+1772122460: Opening ipv4 listen socket on port 1883.
+1772122460: Opening ipv6 listen socket on port 1883.
+1772122460: Opening ipv4 listen socket on port 9001.
+1772122460: Opening ipv6 listen socket on port 9001.
+1772122460: mosquitto version 2.1.2 running
+1772122474: New connection from ::1:52964 on port 1883.
+1772122474: New client connected from ::1:52964 as auto-C4F66AB0-2541-149A-0787-600D1987DD94 (p4, c1, k60, u'admin').
+1772122644: Client auto-C4F66AB0-2541-149A-0787-600D1987DD94 [::1:52964] disconnected.
+1772122654: New connection from ::1:54290 on port 1883.
+1772122654: New client connected from ::1:54290 as auto-AB4BD397-4F6A-FCC2-D821-BE5D97581F91 (p4, c1, k60, u'admin').
+1772122879: Client auto-AB4BD397-4F6A-FCC2-D821-BE5D97581F91 [::1:54290] disconnected.
+1772122886: mosquitto version 2.1.2 terminating
+1772122886: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772122886: mosquitto version 2.1.2 starting
+1772122886: Config loaded from /mosquitto/config/mosquitto.conf.
+1772122886: Bridge support available.
+1772122886: Persistence support available.
+1772122886: TLS support available.
+1772122886: TLS-PSK support available.
+1772122886: Websockets support available.
+1772122886: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772122886: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772122886: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772122886: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772122886: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772122886: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772122886: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772122886: Plugin builtin-security has registered to receive 'acl-check' events.
+1772122886: Opening ipv4 listen socket on port 1883.
+1772122886: Opening ipv6 listen socket on port 1883.
+1772122886: Opening ipv4 listen socket on port 9001.
+1772122886: Opening ipv6 listen socket on port 9001.
+1772122886: mosquitto version 2.1.2 running
+1772122894: New connection from ::1:40644 on port 1883.
+1772122894: New client connected from ::1:40644 as auto-25611B67-54FC-F316-A7C7-D6561F963EA8 (p4, c1, k60, u'admin').
+1772123082: Client auto-25611B67-54FC-F316-A7C7-D6561F963EA8 [::1:40644] disconnected.
+1772123131: mosquitto version 2.1.2 terminating
+1772123131: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772123132: mosquitto version 2.1.2 starting
+1772123132: Config loaded from /mosquitto/config/mosquitto.conf.
+1772123132: Bridge support available.
+1772123132: Persistence support available.
+1772123132: TLS support available.
+1772123132: TLS-PSK support available.
+1772123132: Websockets support available.
+1772123132: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772123132: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772123132: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772123132: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772123132: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772123132: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772123132: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772123132: Plugin builtin-security has registered to receive 'acl-check' events.
+1772123132: Opening ipv4 listen socket on port 1883.
+1772123132: Opening ipv6 listen socket on port 1883.
+1772123132: Opening ipv4 listen socket on port 9001.
+1772123132: Opening ipv6 listen socket on port 9001.
+1772123132: mosquitto version 2.1.2 running
+1772123361: mosquitto version 2.1.2 terminating
+1772123361: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772123362: mosquitto version 2.1.2 starting
+1772123362: Config loaded from /mosquitto/config/mosquitto.conf.
+1772123362: Bridge support available.
+1772123362: Persistence support available.
+1772123362: TLS support available.
+1772123362: TLS-PSK support available.
+1772123362: Websockets support available.
+1772123362: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772123362: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772123362: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772123362: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772123362: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772123362: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772123362: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772123362: Plugin builtin-security has registered to receive 'acl-check' events.
+1772123362: Opening ipv4 listen socket on port 1883.
+1772123362: Opening ipv6 listen socket on port 1883.
+1772123362: Opening ipv4 listen socket on port 9001.
+1772123362: Opening ipv6 listen socket on port 9001.
+1772123362: mosquitto version 2.1.2 running
+1772123681: mosquitto version 2.1.2 terminating
+1772123681: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772123682: mosquitto version 2.1.2 starting
+1772123682: Config loaded from /mosquitto/config/mosquitto.conf.
+1772123682: Bridge support available.
+1772123682: Persistence support available.
+1772123682: TLS support available.
+1772123682: TLS-PSK support available.
+1772123682: Websockets support available.
+1772123682: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772123682: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772123682: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772123682: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772123682: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772123682: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772123682: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772123682: Plugin builtin-security has registered to receive 'acl-check' events.
+1772123682: Opening ipv4 listen socket on port 1883.
+1772123682: Opening ipv6 listen socket on port 1883.
+1772123682: Opening ipv4 listen socket on port 9001.
+1772123682: Opening ipv6 listen socket on port 9001.
+1772123682: mosquitto version 2.1.2 running
+1772123693: New connection from ::1:41464 on port 1883.
+1772123693: New client connected from ::1:41464 as auto-E73574DB-6184-109E-EBB8-FBAB4284FBA4 (p4, c1, k60, u'admin').
+1772123755: mosquitto version 2.1.2 terminating
+1772123755: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772123755: mosquitto version 2.1.2 starting
+1772123755: Config loaded from /mosquitto/config/mosquitto.conf.
+1772123755: Bridge support available.
+1772123755: Persistence support available.
+1772123755: TLS support available.
+1772123755: TLS-PSK support available.
+1772123755: Websockets support available.
+1772123755: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772123755: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772123755: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772123755: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772123755: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772123755: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772123755: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772123755: Plugin builtin-security has registered to receive 'acl-check' events.
+1772123755: Opening ipv4 listen socket on port 1883.
+1772123755: Opening ipv6 listen socket on port 1883.
+1772123755: Opening ipv4 listen socket on port 9001.
+1772123755: Opening ipv6 listen socket on port 9001.
+1772123755: mosquitto version 2.1.2 running
+1772123801: New connection from ::1:42236 on port 1883.
+1772123801: New client connected from ::1:42236 as auto-3EC998FF-EFD1-D857-CD7B-DA75B90790CC (p4, c1, k60, u'admin').
+1772124045: New connection from ::1:32912 on port 1883.
+1772124045: New client connected from ::1:32912 as auto-2D2DE291-9A4A-4A12-2266-C4BB42926BB5 (p4, c1, k60, u'laravel_backend').
+1772124045: Client auto-2D2DE291-9A4A-4A12-2266-C4BB42926BB5 [::1:32912] disconnected.
+1772124333: Client auto-3EC998FF-EFD1-D857-CD7B-DA75B90790CC [::1:42236] disconnected.
+1772124337: mosquitto version 2.1.2 terminating
+1772124337: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124337: mosquitto version 2.1.2 starting
+1772124337: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124337: Bridge support available.
+1772124337: Persistence support available.
+1772124337: TLS support available.
+1772124337: TLS-PSK support available.
+1772124337: Websockets support available.
+1772124337: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124337: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124337: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124337: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124337: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124337: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124337: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124337: Plugin builtin-security has registered to receive 'acl-check' events.
+1772124337: Opening ipv4 listen socket on port 1883.
+1772124337: Opening ipv6 listen socket on port 1883.
+1772124337: Opening ipv4 listen socket on port 9001.
+1772124337: Opening ipv6 listen socket on port 9001.
+1772124337: mosquitto version 2.1.2 running
+1772124340: New connection from ::1:56686 on port 1883.
+1772124340: New client connected from ::1:56686 as auto-49AFCBCD-BEC1-6A8B-25F2-447C8CE8AF27 (p4, c1, k60, u'admin').
+1772124635: Client auto-49AFCBCD-BEC1-6A8B-25F2-447C8CE8AF27 [::1:56686] disconnected.
+1772124638: mosquitto version 2.1.2 terminating
+1772124638: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124639: mosquitto version 2.1.2 starting
+1772124639: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124639: Bridge support available.
+1772124639: Persistence support available.
+1772124639: TLS support available.
+1772124639: TLS-PSK support available.
+1772124639: Websockets support available.
+1772124639: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124639: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124639: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124639: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124639: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124639: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124639: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124639: Plugin builtin-security has registered to receive 'acl-check' events.
+1772124639: Opening ipv4 listen socket on port 1883.
+1772124639: Opening ipv6 listen socket on port 1883.
+1772124639: Opening ipv4 listen socket on port 9001.
+1772124639: Opening ipv6 listen socket on port 9001.
+1772124639: mosquitto version 2.1.2 running
+1772124641: New connection from ::1:34822 on port 1883.
+1772124641: New client connected from ::1:34822 as auto-E8A2C526-A614-5AF5-BA19-3CF45208600E (p4, c1, k60, u'admin').
+1772124881: Client auto-E8A2C526-A614-5AF5-BA19-3CF45208600E [::1:34822] disconnected.
+1772124884: mosquitto version 2.1.2 terminating
+1772124884: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124885: mosquitto version 2.1.2 starting
+1772124885: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124885: Bridge support available.
+1772124885: Persistence support available.
+1772124885: TLS support available.
+1772124885: TLS-PSK support available.
+1772124885: Websockets support available.
+1772124885: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124885: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124885: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124885: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124885: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124885: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124885: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124885: Plugin builtin-security has registered to receive 'acl-check' events.
+1772124885: Opening ipv4 listen socket on port 1883.
+1772124885: Opening ipv6 listen socket on port 1883.
+1772124885: Opening ipv4 listen socket on port 9001.
+1772124885: Opening ipv6 listen socket on port 9001.
+1772124885: mosquitto version 2.1.2 running
+1772124887: New connection from ::1:34800 on port 1883.
+1772124887: New client connected from ::1:34800 as auto-A3638C19-578F-8939-7098-DA4F02CAC6E0 (p4, c1, k60, u'admin').
+1772124977: Client auto-A3638C19-578F-8939-7098-DA4F02CAC6E0 [::1:34800] disconnected.
+1772124980: mosquitto version 2.1.2 terminating
+1772124980: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124981: mosquitto version 2.1.2 starting
+1772124981: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124981: Bridge support available.
+1772124981: Persistence support available.
+1772124981: TLS support available.
+1772124981: TLS-PSK support available.
+1772124981: Websockets support available.
+1772124981: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124981: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124981: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124981: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124981: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124981: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124981: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124981: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124981: Error opening acl file "/mosquitto/config/acl.conf".
+1772124981: mosquitto version 2.1.2 terminating
+1772124981: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124981: mosquitto version 2.1.2 starting
+1772124981: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124981: Bridge support available.
+1772124981: Persistence support available.
+1772124981: TLS support available.
+1772124981: TLS-PSK support available.
+1772124981: Websockets support available.
+1772124981: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124981: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124981: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124981: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124981: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124981: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124981: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124981: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124981: Error opening acl file "/mosquitto/config/acl.conf".
+1772124981: mosquitto version 2.1.2 terminating
+1772124981: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124982: mosquitto version 2.1.2 starting
+1772124982: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124982: Bridge support available.
+1772124982: Persistence support available.
+1772124982: TLS support available.
+1772124982: TLS-PSK support available.
+1772124982: Websockets support available.
+1772124982: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124982: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124982: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124982: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124982: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124982: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124982: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124982: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124982: Error opening acl file "/mosquitto/config/acl.conf".
+1772124982: mosquitto version 2.1.2 terminating
+1772124982: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124983: mosquitto version 2.1.2 starting
+1772124983: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124983: Bridge support available.
+1772124983: Persistence support available.
+1772124983: TLS support available.
+1772124983: TLS-PSK support available.
+1772124983: Websockets support available.
+1772124983: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124983: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124983: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124983: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124983: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124983: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124983: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124983: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124983: Error opening acl file "/mosquitto/config/acl.conf".
+1772124983: mosquitto version 2.1.2 terminating
+1772124983: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124984: mosquitto version 2.1.2 starting
+1772124984: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124984: Bridge support available.
+1772124984: Persistence support available.
+1772124984: TLS support available.
+1772124984: TLS-PSK support available.
+1772124984: Websockets support available.
+1772124984: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124984: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124984: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124984: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124984: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124984: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124984: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124984: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124984: Error opening acl file "/mosquitto/config/acl.conf".
+1772124984: mosquitto version 2.1.2 terminating
+1772124984: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124986: mosquitto version 2.1.2 starting
+1772124986: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124986: Bridge support available.
+1772124986: Persistence support available.
+1772124986: TLS support available.
+1772124986: TLS-PSK support available.
+1772124986: Websockets support available.
+1772124986: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124986: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124986: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124986: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124986: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124986: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124986: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124986: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124986: Error opening acl file "/mosquitto/config/acl.conf".
+1772124986: mosquitto version 2.1.2 terminating
+1772124986: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124989: mosquitto version 2.1.2 starting
+1772124989: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124989: Bridge support available.
+1772124989: Persistence support available.
+1772124989: TLS support available.
+1772124989: TLS-PSK support available.
+1772124989: Websockets support available.
+1772124989: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124989: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124989: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124989: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124989: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124989: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124989: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124989: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124989: Error opening acl file "/mosquitto/config/acl.conf".
+1772124989: mosquitto version 2.1.2 terminating
+1772124989: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772124996: mosquitto version 2.1.2 starting
+1772124996: Config loaded from /mosquitto/config/mosquitto.conf.
+1772124996: Bridge support available.
+1772124996: Persistence support available.
+1772124996: TLS support available.
+1772124996: TLS-PSK support available.
+1772124996: Websockets support available.
+1772124996: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772124996: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772124996: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772124996: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772124996: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772124996: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772124996: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772124996: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772124996: Error opening acl file "/mosquitto/config/acl.conf".
+1772124996: mosquitto version 2.1.2 terminating
+1772124996: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125009: mosquitto version 2.1.2 starting
+1772125009: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125009: Bridge support available.
+1772125009: Persistence support available.
+1772125009: TLS support available.
+1772125009: TLS-PSK support available.
+1772125009: Websockets support available.
+1772125009: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125009: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125009: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125009: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125009: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125009: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125009: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125009: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125009: Error opening acl file "/mosquitto/config/acl.conf".
+1772125009: mosquitto version 2.1.2 terminating
+1772125009: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125035: mosquitto version 2.1.2 starting
+1772125035: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125035: Bridge support available.
+1772125035: Persistence support available.
+1772125035: TLS support available.
+1772125035: TLS-PSK support available.
+1772125035: Websockets support available.
+1772125035: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125035: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125035: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125035: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125035: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125035: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125035: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125035: Error: Invalid ACL topic "gps/commands/%u/+' > /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125035: Error opening acl file "/mosquitto/config/acl.conf".
+1772125035: mosquitto version 2.1.2 terminating
+1772125035: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125042: mosquitto version 2.1.2 starting
+1772125042: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125042: Bridge support available.
+1772125042: Persistence support available.
+1772125042: TLS support available.
+1772125042: TLS-PSK support available.
+1772125042: Websockets support available.
+1772125042: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125042: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125042: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125042: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125042: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125042: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125042: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125042: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125042: Error opening acl file "/mosquitto/config/acl.conf".
+1772125042: mosquitto version 2.1.2 terminating
+1772125042: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125043: mosquitto version 2.1.2 starting
+1772125043: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125043: Bridge support available.
+1772125043: Persistence support available.
+1772125043: TLS support available.
+1772125043: TLS-PSK support available.
+1772125043: Websockets support available.
+1772125043: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125043: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125043: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125043: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125043: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125043: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125043: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125043: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125043: Error opening acl file "/mosquitto/config/acl.conf".
+1772125043: mosquitto version 2.1.2 terminating
+1772125043: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125044: mosquitto version 2.1.2 starting
+1772125044: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125044: Bridge support available.
+1772125044: Persistence support available.
+1772125044: TLS support available.
+1772125044: TLS-PSK support available.
+1772125044: Websockets support available.
+1772125044: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125044: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125044: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125044: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125044: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125044: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125044: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125044: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125044: Error opening acl file "/mosquitto/config/acl.conf".
+1772125044: mosquitto version 2.1.2 terminating
+1772125044: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125044: mosquitto version 2.1.2 starting
+1772125044: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125044: Bridge support available.
+1772125044: Persistence support available.
+1772125044: TLS support available.
+1772125044: TLS-PSK support available.
+1772125044: Websockets support available.
+1772125044: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125044: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125044: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125044: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125044: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125044: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125044: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125044: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125044: Error opening acl file "/mosquitto/config/acl.conf".
+1772125044: mosquitto version 2.1.2 terminating
+1772125044: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125045: mosquitto version 2.1.2 starting
+1772125045: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125045: Bridge support available.
+1772125045: Persistence support available.
+1772125045: TLS support available.
+1772125045: TLS-PSK support available.
+1772125045: Websockets support available.
+1772125045: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125045: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125045: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125045: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125045: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125045: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125045: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125045: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125045: Error opening acl file "/mosquitto/config/acl.conf".
+1772125045: mosquitto version 2.1.2 terminating
+1772125045: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125047: mosquitto version 2.1.2 starting
+1772125047: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125047: Bridge support available.
+1772125047: Persistence support available.
+1772125047: TLS support available.
+1772125047: TLS-PSK support available.
+1772125047: Websockets support available.
+1772125047: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125047: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125047: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125047: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125047: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125047: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125047: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125047: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125047: Error opening acl file "/mosquitto/config/acl.conf".
+1772125047: mosquitto version 2.1.2 terminating
+1772125047: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125051: mosquitto version 2.1.2 starting
+1772125051: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125051: Bridge support available.
+1772125051: Persistence support available.
+1772125051: TLS support available.
+1772125051: TLS-PSK support available.
+1772125051: Websockets support available.
+1772125051: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125051: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125051: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125051: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125051: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125051: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125051: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125051: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125051: Error opening acl file "/mosquitto/config/acl.conf".
+1772125051: mosquitto version 2.1.2 terminating
+1772125051: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125058: mosquitto version 2.1.2 starting
+1772125058: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125058: Bridge support available.
+1772125058: Persistence support available.
+1772125058: TLS support available.
+1772125058: TLS-PSK support available.
+1772125058: Websockets support available.
+1772125058: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125058: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125058: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125058: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125058: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125058: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125058: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125058: Error: Invalid ACL topic "gps/commands/%u/+ "> /mosquitto/config/acl.conf"" in acl_file "/mosquitto/config/acl.conf".
+1772125058: Error opening acl file "/mosquitto/config/acl.conf".
+1772125058: mosquitto version 2.1.2 terminating
+1772125058: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772125063: mosquitto version 2.1.2 starting
+1772125063: Config loaded from /mosquitto/config/mosquitto.conf.
+1772125063: Bridge support available.
+1772125063: Persistence support available.
+1772125063: TLS support available.
+1772125063: TLS-PSK support available.
+1772125063: Websockets support available.
+1772125063: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772125063: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772125063: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772125063: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772125063: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772125063: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772125063: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772125063: Plugin builtin-security has registered to receive 'acl-check' events.
+1772125063: Opening ipv4 listen socket on port 1883.
+1772125063: Opening ipv6 listen socket on port 1883.
+1772125063: Opening ipv4 listen socket on port 9001.
+1772125063: Opening ipv6 listen socket on port 9001.
+1772125063: mosquitto version 2.1.2 running
+1772125067: New connection from ::1:40474 on port 1883.
+1772125067: New client connected from ::1:40474 as auto-65AA33CC-A49E-37BB-29D1-BFAA6B0B7FF3 (p4, c1, k60, u'admin').
+1772126329: Client auto-65AA33CC-A49E-37BB-29D1-BFAA6B0B7FF3 [::1:40474] disconnected.
+1772126385: mosquitto version 2.1.2 terminating
+1772126385: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772126385: mosquitto version 2.1.2 starting
+1772126385: Config loaded from /mosquitto/config/mosquitto.conf.
+1772126385: Bridge support available.
+1772126385: Persistence support available.
+1772126385: TLS support available.
+1772126385: TLS-PSK support available.
+1772126385: Websockets support available.
+1772126385: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+
+1772126385: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+
+1772126385: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+
+1772126385: Plugin builtin-security has registered to receive 'basic-auth' events.
+1772126385: Warning: File /mosquitto/config/acl.conf has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/acl.conf`.
+
+1772126385: Warning: File /mosquitto/config/acl.conf owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/acl.conf`.
+
+1772126385: Warning: File /mosquitto/config/acl.conf group is not mosquitto. Future versions will refuse to load this file.
+
+1772126385: Plugin builtin-security has registered to receive 'acl-check' events.
+1772126385: Opening ipv4 listen socket on port 1883.
+1772126385: Opening ipv6 listen socket on port 1883.
+1772126385: Opening ipv4 listen socket on port 9001.
+1772126385: Opening ipv6 listen socket on port 9001.
+1772126385: mosquitto version 2.1.2 running
+1772127697: mosquitto version 2.1.2 terminating
+1772127697: Saving in-memory database to /mosquitto/data//mosquitto.db.
