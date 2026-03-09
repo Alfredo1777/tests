@@ -5,16 +5,15 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use PhpMqtt\Client\MqttClient;
 use PhpMqtt\Client\ConnectionSettings;
+use App\Modules\GPS\Models\Device; // <-- IMPORTAMOS EL MODELO
 
 class MqttSimulate extends Command
 {
-    //  CAMBIO AQUÍ: Ahora usamos --devices en lugar de --count
     protected $signature = 'mqtt:simulate {--devices=10 : Número de dispositivos a simular} {--interval=30 : Segundos entre ráfagas}';
-    protected $description = 'Simula tráfico de N dispositivos GPS y mide el performance';
+    protected $description = 'Simula tráfico usando dispositivos reales de la BD';
 
     public function handle()
     {
-        //  CAMBIO AQUÍ: Leemos la opción 'devices'
         $count = (int) $this->option('devices');
         $interval = (int) $this->option('interval');
         
@@ -22,66 +21,56 @@ class MqttSimulate extends Command
         $port     = env('MQTT_PORT', 1883);
         $clientId = 'simulator_master_' . uniqid();
 
-        $this->info(" Iniciando Simulador de Carga: {$count} dispositivos...");
+        // 1. OBTENER DISPOSITIVOS REALES DE LA BD
+        $devicesArray = Device::limit($count)->pluck('uuid')->toArray();
+
+        if (empty($devicesArray)) {
+            $this->error(" ¡No hay dispositivos en la base de datos! Crea uno primero antes de simular.");
+            return 1;
+        }
+
+        $this->info(" Iniciando Simulador con " . count($devicesArray) . " dispositivos reales...");
 
         try {
+            // 2. USAR CREDENCIALES LEGALES DEL .ENV
             $settings = (new ConnectionSettings)
-                ->setUsername('simulator')
-                ->setPassword('sim123'); // Usamos el Pase VIP
+                ->setUsername(env('MQTT_USERNAME'))
+                ->setPassword(env('MQTT_PASSWORD'));
 
             $mqtt = new MqttClient($server, $port, $clientId);
             $mqtt->connect($settings);
             $this->info(" Simulador conectado al broker.");
 
-            // Generar UUIDs falsos para los dispositivos
-            $devicesArray = [];
-            for ($i = 1; $i <= $count; $i++) {
-                $devicesArray[] = 'sim-uuid-' . str_pad($i, 4, '0', STR_PAD_LEFT);
-            }
-
-            // Loop infinito de envíos
             $ciclo = 1;
             while (true) {
                 $this->info("\n--- Iniciando Ráfaga #{$ciclo} ---");
-                
-                $start_time = microtime(true); // Cronómetro INICIO
+                $start_time = microtime(true);
                 
                 foreach ($devicesArray as $uuid) {
-                    // Generamos coordenadas falsas (Cerca de Manzanillo, Colima)
                     $lat = 19.05 + (mt_rand(-100, 100) / 10000);
                     $lng = -104.31 + (mt_rand(-100, 100) / 10000);
                     
+                    // JSON exacto que espera nuestro Validador
                     $payload = json_encode([
-                        'lat' => round($lat, 6),
-                        'lng' => round($lng, 6),
+                        'latitude' => round($lat, 6),
+                        'longitude' => round($lng, 6),
                         'speed' => mt_rand(0, 100),
                         'battery' => mt_rand(10, 100),
-                        'ts' => time()
+                        'satellite' => now()->toIso8601String() // Fecha ISO8601
                     ]);
 
                     $topic = "gps/devices/{$uuid}/telemetry";
                     
-                    // Publicamos sin esperar confirmación (QoS 0) para máxima velocidad
                     $mqtt->publish($topic, $payload, 0);
+                    $this->line("📡 Enviado -> {$topic}");
                 }
 
-                $end_time = microtime(true); // Cronómetro FIN
-                
-                // Calcular métricas
+                $end_time = microtime(true);
                 $latency_sec = $end_time - $start_time;
-                $msg_per_sec = $latency_sec > 0 ? $count / $latency_sec : 0;
-
-                // Imprimir resultados
-                $this->table(
-                    ['Métrica', 'Resultado'],
-                    [
-                        ['Dispositivos simulados', $count],
-                        ['Tiempo Total (Latencia)', round($latency_sec, 4) . ' segundos'],
-                        ['Rendimiento (Throughput)', round($msg_per_sec, 2) . ' msgs/segundo']
-                    ]
-                );
-
-                $this->comment("Esperando {$interval} segundos para la siguiente ráfaga...");
+                
+                $this->info(" Ráfaga enviada en " . round($latency_sec, 4) . " segundos.");
+                $this->comment("Esperando {$interval} segundos...");
+                
                 sleep($interval);
                 $ciclo++;
             }

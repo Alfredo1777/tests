@@ -11,7 +11,7 @@ use App\Modules\Core\Models\Status;
 class Device extends Model
 {
     //1. Vincular al esquema "gps"
-    protected $table = 'gps.devices';
+    protected $table = 'devices';
 
     //2. Configuracion de PK y Timestamps
     protected $primaryKey = 'id';

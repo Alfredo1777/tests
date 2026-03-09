@@ -98,6 +98,11 @@ return [
             'sslmode' => env('DB_SSLMODE', 'prefer'),
             'search_path' => 'core, gps, security, public',
             'sslmode' => 'prefer',
+            'options' => [
+                \PDO::ATTR_PERSISTENT => true,
+                \PDO::ATTR_TIMEOUT => 30,
+                \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+            ],
         ],
 
         'sqlsrv' => [

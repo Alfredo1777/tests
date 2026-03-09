@@ -21,6 +21,9 @@ use App\Modules\GPS\Services\DlqService;
 use App\Modules\GPS\Services\MessageSanitizerService;
 use Illuminate\Support\Lottery;
 use App\Modules\GPS\Services\MetricsService;
+use App\Modules\GPS\Services\PersistenceQueueService;
+use Illuminate\Support\Facades\Cache;
+use App\Modules\GPS\Services\TelemetryBatchService;
 use Exception;
 
 class MqttSubscribe extends Command
@@ -36,6 +39,8 @@ class MqttSubscribe extends Command
     protected $retryService;
     protected $dlqService;
     protected $metricsService;
+    protected $persistenceQueue;
+    protected $batchService;
 
     public function __construct(
         TelemetryService $telemetryService,
@@ -44,7 +49,9 @@ class MqttSubscribe extends Command
         MessageValidatorService $validatorService,
         MessageRetryService $retryService,
         DlqService $dlqService,
-        MetricsService $metricsService
+        MetricsService $metricsService,
+        PersistenceQueueService $persistenceQueue,
+        TelemetryBatchService $batchService
     ) {
         parent::__construct();
         $this->telemetryService = $telemetryService;
@@ -54,6 +61,8 @@ class MqttSubscribe extends Command
         $this->retryService = $retryService;
         $this->dlqService = $dlqService;
         $this->metricsService = $metricsService;
+        $this->persistenceQueue = $persistenceQueue;
+        $this->batchService = $batchService;
     }
 
     public function handle()
@@ -63,6 +72,17 @@ class MqttSubscribe extends Command
         $clientId = env('MQTT_CLIENT_ID', 'laravel_worker_') . uniqid();
         $user     = env('MQTT_USERNAME');
         $password = env('MQTT_PASSWORD');
+
+        $this->info("Verificando salud de la base de datos...");
+        try {
+            // Fuerza un ping a PostgreSQL para verificar que está vivo
+            \Illuminate\Support\Facades\DB::connection()->getPdo();
+            $this->info(" Health Check BD: Conexión persistente establecida.");
+        } catch (\Exception $e) {
+            $this->error(" Error Fatal: No hay conexión a PostgreSQL. El Worker no puede iniciar.");
+            Log::channel('mqtt')->critical("BD Inaccesible al iniciar Worker: " . $e->getMessage());
+            return 1; // Detiene la ejecución
+        }
 
         $this->info("Iniciando conexión MQTT a {$server}:{$port}...");
 
@@ -84,6 +104,11 @@ class MqttSubscribe extends Command
                 // Aislamiento total: Cada mensaje tiene su propio ciclo de vida
                 $this->procesarMensajePipeline($topic, $message);
             }, 1);
+            $mqtt->registerLoopEventHandler(function (\PhpMqtt\Client\MqttClient $client, float $elapsedTime) {
+                if ((microtime(true) - $this->batchService->getLastFlushTime()) > 0.1) {
+                    $this->batchService->flush();
+                }
+            });
 
             $this->info("Escuchando en: {$topic}");
             $this->info("Presiona Ctrl+C para detener.");
@@ -103,6 +128,8 @@ class MqttSubscribe extends Command
      */
     protected function procesarMensajePipeline($topic, $message)
     {
+        $this->info("Recibido de mosquitto: {topic}");
+        $parts = explode('/', $topic);
         $startTime = microtime(true);
         $parts = explode('/', $topic);
         $deviceUuid = $parts[2] ?? 'unknown';
@@ -139,13 +166,29 @@ class MqttSubscribe extends Command
                 Log::channel('mqtt')->debug(" [FASE 3] Validación estricta superada");
 
                 // ---------------------------------------------------------
-                //  FASE 4: Persistencia (TelemetryService)
+                //  FASE 4: Persistencia (Caché + Batching)
                 // ---------------------------------------------------------
-                $device = Device::where('uuid', $deviceUuid)->first();
+                // Caché en Redis (TTL 5 minutos / 300 segundos). Evita 1 query (SELECT) por cada mensaje.
+                $traceId = $messageTrackerId;
+                $deviceId = Cache::remember("device_uuid:{$deviceUuid}", 300, function () use ($deviceUuid) {
+                    $device = Device::where('uuid', $deviceUuid)->first();
+                    return $device ? $device->id : null;
+                });
+
+                if (!$deviceId) {
+                    throw new \App\Modules\GPS\Exceptions\DeviceNotFoundException("UUID [{$deviceUuid}] no existe en BD.");
+                }
+
                 $telemetryDTO = TelemetryDTO::fromArray($sanitizedPayload);
                 
-                $this->telemetryService->ingest($device->id, $telemetryDTO);
-                Log::channel('mqtt')->debug(" [FASE 4] Ingesta en PostgreSQL exitosa");
+                try {
+                    // Encolar en memoria en lugar de ejecutar la query inmediatamente
+                    $this->batchService->push($deviceId, $telemetryDTO, $traceId);
+                    Log::channel('mqtt')->debug(" [{$traceId}] Mensaje encolado en memoria (Batching)");
+                } catch (\Exception $dbError) {
+                    $this->persistenceQueue->enqueuePersistence($deviceId, $telemetryDTO, $dbError->getMessage());
+                    throw $dbError;
+                }
 
                 // ---------------------------------------------------------
                 //  FASE 5: Métricas y Cierre
