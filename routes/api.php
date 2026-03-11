@@ -6,6 +6,9 @@ use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\DeviceController;
 use App\Modules\GPS\Controllers\PositionController;
 use App\Modules\GPS\Controllers\TelemetryController;
+use App\Modules\GPS\Services\ResilienceMetricsService;
+use Illuminate\Support\Facades\Response;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -111,4 +114,11 @@ Route::get('/system/healthcheck', function (): JsonResponse {
             'timestamp' => now()->toIso8601String(),
         ], 500);
     }
+});
+
+Route::get('/metrics', function (ResilienceMetricsService $metricsService) {
+    $content = $metricsService->getPrometheusMetrics();
+    return Response::make($content, 200, [
+        'Content-Type' => 'text/plain; version=0.0.4'
+    ]);
 });
