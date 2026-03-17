@@ -11,7 +11,7 @@ class Position extends Model
     use HasSpatial;
 
     //1. Vincular al esquema "gps"
-    protected $table = 'positions';
+    protected $table = 'gps.positions';
 
     //2. Configuracion de PK y Timestamps
     protected $primaryKey = 'id';

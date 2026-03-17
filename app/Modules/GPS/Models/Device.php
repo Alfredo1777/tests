@@ -10,8 +10,8 @@ use App\Modules\Core\Models\Status;
 
 class Device extends Model
 {
-    //1. Vincular al esquema "gps"
-    protected $table = 'devices';
+    //1. Vincular al esquema "core"
+    protected $table = 'core.devices';
 
     //2. Configuracion de PK y Timestamps
     protected $primaryKey = 'id';

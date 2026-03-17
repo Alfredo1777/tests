@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class TelemetryRetryQueue extends Model
 {
-    protected $table = 'telemetry_retry_queue';
+    protected $table = 'mqtt.telemetry_retry_queue';
 
     protected $fillable = [
         'device_id',

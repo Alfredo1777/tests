@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MqttDeadLetter extends Model
 {
-    protected $table = 'mqtt_dead_letters';
+    protected $table = 'mqtt.mqtt_dead_letters';
     public $timestamps = false;
 
     protected $fillable = [

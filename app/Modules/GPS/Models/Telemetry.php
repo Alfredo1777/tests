@@ -11,7 +11,7 @@ class Telemetry extends Model
     use HasSpatial;
 
     //1. Vincular al esquema "gps"
-    protected $table = 'telemetry';
+    protected $table = 'gps.telemetry';
 
     //2. Configuracion de PK y Timestamps
     protected $primaryKey = 'id';
